@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 </head>
 <body>
 <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
-<h1>Welcome <?php echo $_COOKIE['uname'] ?></h1>
+<h1>Welcome <?php echo $_SESSION['uname'] ?></h1>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <h3>Select blood group</h3>
             <select name="group">
