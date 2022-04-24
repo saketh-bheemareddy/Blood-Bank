@@ -30,10 +30,8 @@
 <?php include 'connection.php'; ?>
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $group=$_POST['group'];
-    
-}
-$sql="SELECT * FROM donar_details WHERE blood_group='$group';";
+    $group=$_POST['group']; 
+    $sql="SELECT * FROM donar_details WHERE blood_group='$group';";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
@@ -42,7 +40,9 @@ if ($result->num_rows > 0) {
   }
 } else {
   echo "0 results";
+}  
 }
+
 
 $conn->close();
 ?>

@@ -1,7 +1,6 @@
 <?php include 'connection.php'; ?>
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    
     $uid=$_POST['uid'];
     $location=$_POST['location'];
     $contact=$_POST['contact'];
