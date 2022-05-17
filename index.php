@@ -7,7 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="login.php">Login</a> <br> <br>
-    <a href="register.php">Register</a>
-</body>
+        <center>
+            <header>
+                <h3>Blood Bank</h3>
+                <marquee behavior="" direction="">Be a Donar and Be a Human</marquee>
+            </header>
+        </center>
+        <div class="flex-container">
+            <div>
+                <a href="login.php">Login</a> <br> <br>
+                <a href="register.php">Register</a>
+            </div>
+            <div>2</div>
+        </div>
+    </body>
 </html>
