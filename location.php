@@ -6,12 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="location_page.css">
 </head>
 <body>
-<a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
-<h1>Welcome <?php echo $_SESSION['uname'] ?></h1>
+<header>
+  <div class="nav-menu">
+    <a href="welcome.php">Home</a> &nbsp; &nbsp; &nbsp; <a href="logout.php">Log out</a> <br> <br>
+  </div>
+  <br>
+  <h1>Welcome <?php echo $_SESSION['uname'] ?></h1>
+</header>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-            <h3>Select Location</h3>
+            <h3>Select Location to view</h3>
             <select name="location">
               <option value="select">Select</option>
                 <option  value="Hyderabad">Hyderabad</option>
@@ -29,18 +35,31 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $location=$_REQUEST['location'];
-}
-$sql="SELECT * FROM donar_details WHERE Location='$location';";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "UID: " , $row["uid"], " - location: " , $row["Location"]," - contact number: " , $row["phone"]," - email: " , $row["email"], " - blood group: " , $row["blood_group"], "<br>";
+    $sql="SELECT * FROM donar_details WHERE Location='$location';";
+  $result = $conn->query($sql);
+?>
+<br><br>
+<table style = "width:75%; margin-left:auto; margin-right:auto" >
+  <tr>
+    <th>Aadhar</th>
+    <th>Name</th>
+    <th>E-mail</th>
+    <th>Contact</th>
+    <th>Blood Group</th>
+  </tr>
+<?php
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) 
+    {
+      echo '<tr><td>',$row["uid"],'</td><td>',$row["username"],'</td><td>',$row["email"],'</td><td>',$row["phone"],'</td><td>',$row["blood_group"],'</td></tr>';
+    }
+  } 
+  else 
+  {
+    echo "<tr><td colspan='5'>No Results Found</td></tr>";
   }
-} else {
-  echo "0 results";
 }
-
 $conn->close();
 ?>
+</table>
