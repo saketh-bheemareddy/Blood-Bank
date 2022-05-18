@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BY blood Group</title>
+  <link rel="stylesheet" href="group_page.css">
 </head>
 <body>
 <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
@@ -33,16 +34,29 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $group=$_POST['group']; 
     $sql="SELECT * FROM donar_details WHERE blood_group='$group';";
 $result = $conn->query($sql);
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "<br>UID: " , $row["uid"], " - location: " , $row["Location"]," - contact number: " , $row["phone"]," - email: " , $row["email"], " - blood group: " , $row["blood_group"], "<br>";
+?>
+<br><br>
+<table style = "width:75%; margin-left:auto; margin-right:auto" >
+  <tr>
+    <th>Aadhar</th>
+    <th>Name</th>
+    <th>E-mail</th>
+    <th>Contact</th>
+    <th>Location</th>
+  </tr>
+<?php
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) 
+    {
+      echo '<tr><td>',$row["uid"],'</td><td>',$row["username"],'</td><td>',$row["email"],'</td><td>',$row["phone"],'</td><td>',$row["Location"],'</td></tr>';
+    }
+  } 
+  else 
+  {
+    echo "<tr><td colspan='5'>No Results Found</td></tr>";
   }
-} else {
-  echo "0 results";
-}  
 }
-
-
 $conn->close();
 ?>
+</table>
