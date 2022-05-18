@@ -1,0 +1,13 @@
+input:required:invalid {
+    border: 2px solid red;
+}
+input:required:valid{
+    border: 2px solid greenyellow;
+}
+input{
+    outline: none;
+}
+form:invalid button {
+    opacity: 0.3;
+    pointer-events: none;
+}
