@@ -14,6 +14,7 @@
             <input type = "password" name = 'pwd' id="pwd"> <br> <br>
             <input type="checkbox" name="">Remember me <br> <br>
             <input type="submit" value="Login" name="login">
+            <p>Not a user ? <a href="register.php">Register here..</a></p>
         </form> 
 </body>
 </html>
