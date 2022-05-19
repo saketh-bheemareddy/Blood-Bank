@@ -35,10 +35,14 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $location=$_REQUEST['location'];
+
+    //sql query to find all donars of specific location.
     $sql="SELECT * FROM donar_details WHERE Location='$location';";
+
   $result = $conn->query($sql);
 ?>
 <br><br>
+<!-- creating a table to display output -->
 <table style = "width:75%; margin-left:auto; margin-right:auto" >
   <tr>
     <th>Aadhar</th>

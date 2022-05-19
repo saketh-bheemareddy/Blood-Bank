@@ -10,6 +10,7 @@
 </head>
 <body>
 <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
+          <!-- using session to get the user name -->
 <h1>Welcome <?php echo $_SESSION['uname'] ?></h1>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <h3>Select blood group</h3>
@@ -28,15 +29,20 @@
 </form>
 </body>
 </html>              
-<?php include 'connection.php'; ?>
+<?php include 'connection.php'; ?> 
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $group=$_POST['group']; 
+
+    // sql query to find all donars with required blood group
+
     $sql="SELECT * FROM donar_details WHERE blood_group='$group';";
-$result = $conn->query($sql);
+    $result = $conn->query($sql);
+}
 ?>
 <br><br>
-<table style = "width:75%; margin-left:auto; margin-right:auto" >
+<!-- create table to diplay output -->
+<table style = "width:75%; margin-left:auto; margin-right:auto" > 
   <tr>
     <th>Aadhar</th>
     <th>Name</th>
@@ -46,17 +52,17 @@ $result = $conn->query($sql);
   </tr>
 <?php
   if ($result->num_rows > 0) {
-    // output data of each row
+    // output data of each row in form of table
     while($row = $result->fetch_assoc()) 
     {
       echo '<tr><td>',$row["uid"],'</td><td>',$row["username"],'</td><td>',$row["email"],'</td><td>',$row["phone"],'</td><td>',$row["Location"],'</td></tr>';
     }
-  } 
+  }
+  // if no user found with that blood group display no results found. 
   else 
   {
     echo "<tr><td colspan='5'>No Results Found</td></tr>";
   }
-}
 $conn->close();
 ?>
 </table>

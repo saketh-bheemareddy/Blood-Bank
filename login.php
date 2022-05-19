@@ -21,6 +21,7 @@
 </body>
 </html>
 <?php 
+// if user sets remember me then data is displayed in textfields
 if (isset($_COOKIE['uid']) && isset($_COOKIE['pwd'])) 
 {
     $uid = $_COOKIE['uid'];

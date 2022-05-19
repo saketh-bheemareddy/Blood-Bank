@@ -18,10 +18,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     $uid = $_POST['uid'];
     $email = $_POST['email'];
     $pwd = $_POST['pwd'];
+
+    // sql query to find user with uid and email-id
     $sql = "SELECT * from donar_details where uid = '$uid' and email = '$email'";
     $res = $conn->query($sql);
     if($res==TRUE)
     {
+        // sql query to update passwordof the user
+        
         $sql2 = "UPDATE donar_details SET userpassword='$pwd' where uid = '$uid'";
         $res2 = $conn->query($sql2);
         if($res2 == TRUE)
