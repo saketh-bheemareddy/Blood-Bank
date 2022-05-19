@@ -20,7 +20,7 @@
             <label for="email">Email: </label>
             <input type="email" name="email" required> <br> <br>
             <label for="bld">Blood Group: </label>
-            <input type="text" name="group" required pattern="[A|B|AB|O][+-]"> <br> <br>
+            <input type="text" name="group" required pattern="([A|B|O]|[A][B])[\+-]"> <br> <br>
             <label for="location">Location: </label>
             <select name="location" required>
               <option value="" >Select Location</option>
