@@ -10,22 +10,25 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $uname = $_POST['uname'];
     $sql2 = "SELECT uid from donar_details where uid= '$uid'";
     $res = $conn->query($sql2);
-    if(mysqli_num_rows($res) > 0)
-    {
-        echo "<center>";
-        echo "<h4>User Already Exists</h4>";
-        echo "please <a href='login.php'>Login</a> Here","<br>";
-        echo "</center>";
-    }
-    else{
+    try{
         $sql="INSERT INTO donar_details VALUES('$uid','$uname','$pwd','$email','$contact','$group','$location')";
         if($conn->multi_query($sql)===TRUE){
             echo "Registered successfully","<br>";
             echo "<a href='login.php'>Login</a>","<br>";
         }
-        else{
-            echo "Error: " .$sql . "<br>" . $conn->error;
+        throw new Exception();
+        
+    }
+    catch(Exception $e)
+    {
+        if($e->getCode() == 1062)
+        {
+            echo "<center>";
+            echo "<h4>User Already Exists</h4>";
+            echo "please <a href='login.php'>Login</a> Here","<br>";
+            echo "</center>";
         }
     }
+    
 }
 ?>
