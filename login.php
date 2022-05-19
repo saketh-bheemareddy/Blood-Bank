@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body background="blood.jpg">
 <form action="loginvalidate.php" method="post">
             <label for="uid">Enter UID(Aadhar): </label>
             <input type="text" name="uid" id="uid"> <br> <br>
