@@ -18,7 +18,6 @@
                 <a href="login.php">Login</a> <br> <br>
                 <a href="register.php">Register</a>
             </div>
-            <div>2</div>
         </div>
     </body>
 </html>
