@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $sql="SELECT * FROM donar_details WHERE blood_group='$group';";
     $result = $conn->query($sql);
-}
+
 ?>
 <br><br>
 <!-- create table to diplay output -->
@@ -64,5 +64,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     echo "<tr><td colspan='5'>No Results Found</td></tr>";
   }
 $conn->close();
+}
 ?>
 </table>
