@@ -7,5 +7,4 @@ session_start();
   echo "<a href='group.php'>View By Blood Group</a>","<br> <br>";
   echo "<a href='location.php'>View By Location</a>","<br> <br>";
   echo "<a href='logout.php'>Log out</a>";
-
 ?>

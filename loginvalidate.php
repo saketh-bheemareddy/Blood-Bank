@@ -15,6 +15,7 @@ if ($result->num_rows > 0) {
     $uname = $rows['username'];
     session_start();
     $_SESSION['uname'] = $uname;
+    $_SESSION['uid'] = $uid;
     header('location:welcome.php');
   }
   else
