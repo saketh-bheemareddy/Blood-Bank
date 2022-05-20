@@ -12,30 +12,27 @@ if( isset( $_GET['wrong_pwd'] ) AND $_GET['wrong_pwd'] == 'true' ) {
     <title>Document</title>
 </head>
 <style>
-  .login {
-                width: 400px;
-                height: auto;
-                margin: auto;
-                padding: 20px 30px;
-                background: rgba(0,0,0,0.4);
-                border-radius: 10px;
-                color: white;
-                float:right;
-                max-width: 300px;
-            margin-top:150px;
-            margin-right:150px;
-            margin-bottom:300px;
-            display: flex;
-            }
-            body{
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-            label { 
-          width:100px;
-          display: inline-block; }
+.login{
+  width: 400px;
+  height: auto;
+  margin: auto;
+  padding: 20px 30px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  color: white;
+  float:right;
+  max-width: 300px;
+  margin-top:10px;
+  margin-right:0px;
+  margin-bottom:300px;
+  display: flex;
+}
+label{
+  width:100px;
+  display: inline-block; 
+}
 
-        ul {
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,7 +40,7 @@ if( isset( $_GET['wrong_pwd'] ) AND $_GET['wrong_pwd'] == 'true' ) {
   background-color: #dddddd;
 }
 body {
-background-position: center;
+
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -60,11 +57,7 @@ li a {
 <body background="blood.jpg">
 <!-- <ul>
   <li><a href="#home">Home</a></li>
-<<<<<<< HEAD
   <li><a href="#news">News</a></li>
-=======
-  < <li><a href="#news">News</a></li> 
->>>>>>> 14ee62be2b76e89b955e43e308fa2c6d852dcf3c
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About Us</a></li>
 </ul> -->
