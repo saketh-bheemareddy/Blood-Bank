@@ -78,7 +78,11 @@ height:100%;
                 <option value="Khammam">Khammam</option>       
             </select> 
             <p id="loactionerr"></p><br> 
+<<<<<<< HEAD
             <center><button class="button" type="submit" name="send">Submit</button><center>
+=======
+            <center><button type="submit" name="send">Submit</button></center>
+>>>>>>> 14ee62be2b76e89b955e43e308fa2c6d852dcf3c
         </form>
 </div>
 </body>
