@@ -1,11 +1,16 @@
 table,th,td{
-    border: 1px solid black;
-    border-collapse : collapse;
-}
-th,td{
-text-align: center;
+    border: 2px solid;
+    /* border-collapse : collapse; */
+    text-align: center;
+    /* border-color: black; */
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+}
+
+.input-group{
+    margin-right: 25%;
+}
+.font-weight-bold{
+    font-size: larger;
 }
