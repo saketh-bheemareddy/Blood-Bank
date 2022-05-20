@@ -1,4 +1,8 @@
 <?php include 'connection.php'?>
+<?php
+if(isset($_GET['wrong_details']) and $_GET['wrong_details'] == 'true'){
+    echo "<script>alert('Invalid details please try again');</script>";
+}?>
 <html>
     <body>
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
@@ -22,20 +26,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     // sql query to find user with uid and email-id
     $sql = "SELECT * from donar_details where uid = '$uid' and email = '$email'";
     $res = $conn->query($sql);
-    if($res==TRUE)
+    if($res->num_rows > 0)
     {
         // sql query to update passwordof the user
         
         $sql2 = "UPDATE donar_details SET userpassword='$pwd' where uid = '$uid'";
-        $res2 = $conn->query($sql2);
-        if($res2 == TRUE)
+        if($conn->multi_query($sql2)===TRUE)
         {
-            echo "password updated succesfully";
-            echo "Please <a href='login.php'>Login</a>";
+            header("Location:login.php?password_update = true");
         }
     }
     else{
-        echo "Invalid details Try again <br><br>";
-        include 'forgotpassword.php';
+        header("Location:forgotpassword.php?wrong_details=true");
     }
 }

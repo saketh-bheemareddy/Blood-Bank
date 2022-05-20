@@ -29,10 +29,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         //sql duplicate for primary key wxception handling
         if($e->getCode() == 1062)
         {
-            echo "<center>";
-            echo "<h4>User Already Exists</h4>";
-            echo "please <a href='login.php'>Login</a> Here","<br>";
-            echo "</center>";
+            header("Location:login.php?existing_user=true");
         }
     }
     

@@ -1,8 +1,16 @@
 <?php
 if( isset( $_GET['wrong_pwd'] ) AND $_GET['wrong_pwd'] == 'true' ) {
   echo "<script>alert('Invalid login details');</script>";
-
-}?>
+}
+if (isset($_GET['existing_user']) AND $_GET['existing_user'] == 'true')
+{
+  echo "<script>alert('User already Existed please Log in');</script>";
+}
+if (isset($_GET['password_update']) AND $_GET['password_update'] == 'true')
+{
+  echo "<script>alert('password updated successfully please Log in');</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
