@@ -8,14 +8,7 @@
   <title>BY blood Group</title>
   <link rel="stylesheet" href="group_page.css">
 </head>
-<style>
-  body{
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  </style>
-<body background="loc.jpg">
+<body>
 <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
           <!-- using session to get the user name -->
 <h1>Welcome <?php echo $_SESSION['uname'] ?></h1>

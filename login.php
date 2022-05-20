@@ -33,11 +33,6 @@
   overflow: hidden;
   background-color: #dddddd;
 }
-body {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
 
 li {
   float: left;
@@ -49,12 +44,12 @@ li a {
 }
  </style>
 <body background="blood.jpg">
-<!-- <ul>
+<ul>
   <li><a href="#home">Home</a></li>
-  < <li><a href="#news">News</a></li> 
+  <!-- <li><a href="#news">News</a></li> -->
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About Us</a></li>
-</ul> -->
+</ul>
 <div class="login">
 <form action="loginvalidate.php" method="post">
     <center>
