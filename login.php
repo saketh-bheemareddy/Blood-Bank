@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <style>
-        .login {
-                width: auto;
-                height: 250 px;
+  .login {
+                width: 400px;
+                height: auto;
                 margin: auto;
                 padding: 20px 30px;
-                background: rgba(0,0,0,0.5);
+                background: rgba(0,0,0,0.4);
                 border-radius: 10px;
                 color: white;
                 float:right;
@@ -21,6 +21,10 @@
             margin-right:150px;
             margin-bottom:300px;
             display: flex;
+            }
+            body{
+              background-repeat: no-repeat;
+              background-size: cover;
             }
             label { 
           width:100px;
@@ -44,12 +48,12 @@ li a {
 }
  </style>
 <body background="blood.jpg">
-<ul>
+<!-- <ul>
   <li><a href="#home">Home</a></li>
-  <!-- <li><a href="#news">News</a></li> -->
+  <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About Us</a></li>
-</ul>
+</ul> -->
 <div class="login">
 <form action="loginvalidate.php" method="post">
     <center>

@@ -19,7 +19,8 @@ height:100%;
             height: 250 px;
             margin: auto;
             padding: 20px 30px;
-            background: crimson;
+            background: #fd5c63;
+            
             /* border-radius: 10px; */
             color: white;
             float:left;
@@ -36,6 +37,17 @@ height:100%;
         label { 
           width:100px;
           display: inline-block; }
+          .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+}
+
 
   </style>
 
@@ -65,8 +77,8 @@ height:100%;
                 <option value="Adilabad">Adilabad</option> 
                 <option value="Khammam">Khammam</option>       
             </select> 
-            <p id="loactionerr"></p><br> <br>
-            <button type="submit" name="send">Submit</button>
+            <p id="loactionerr"></p><br> 
+            <center><button class="button" type="submit" name="send">Submit</button><center>
         </form>
 </div>
 </body>
