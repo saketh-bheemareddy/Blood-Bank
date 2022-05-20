@@ -1,3 +1,9 @@
+<?php
+if( isset( $_GET['not_a_user'] ) AND $_GET['not_a_user'] == 'true' ) {
+  echo "<script>alert('User Not Registered please register');</script>";
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

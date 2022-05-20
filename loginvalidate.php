@@ -27,14 +27,13 @@ if ($result->num_rows > 0) {
   else
   {
     // if password is incorrect
-    echo "<h3><b>Invalid password!!</b> Try Again</h3>";
-    include 'login.php';
+    header("Location:login.php?wrong_pwd=true");
   }
 }
-else {
+else{
   // if user is not registerd.
   echo "<h3><b>No user found !! Please Register</b></h3><br>";
-  include 'login.php';
+  header("Location:register.php?not_a_user=true");
 }
 $conn->close();
 ?>

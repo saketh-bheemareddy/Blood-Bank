@@ -1,3 +1,8 @@
+<?php
+if( isset( $_GET['wrong_pwd'] ) AND $_GET['wrong_pwd'] == 'true' ) {
+  echo "<script>alert('Invalid login details');</script>";
+
+}?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
