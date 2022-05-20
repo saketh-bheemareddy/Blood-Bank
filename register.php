@@ -7,47 +7,13 @@
     <title>Register</title>
     <link rel="stylesheet" href="register.css">
 </head>
-<style>
- body {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height:100%;
-}
-.register {
-            width: auto;
-            height: 250 px;
-            margin: auto;
-            padding: 20px 30px;
-            background: crimson;
-            /* border-radius: 10px; */
-            color: white;
-            float:left;
-            max-width: 350px;
-        margin-top:150px;
-        margin-right:150px;
-        margin-left:100px;
-        margin-bottom:300px;
-        display: flex;
-        }
-        table{
-        display: table; 
-        } 
-        label { 
-          width:100px;
-          display: inline-block; }
-
-  </style>
-
-<body background="r5.jpg">
-  <div class="register">
+<body>
 <form action="insert.php" method="post">
-  <center><h2 style="color:black">Registration Form</h2></center>
             <label for="uid">Uid(Aadhar): </label>
             <input type="text" name="uid" required minlenght="12" maxlength="12" pattern="[2-9]{1}[0-9]{11}"> <br> <br>
             <label for="uname">Full Name: </label>
             <input type="text" name="uname" required pattern="[A-Z][a-z]{,29}"> <br> <br>
-            <label>Password:<small></small> </label>
+            <label>Password:<small>(min 8 characters)</small> </label>
             <input type = "password" name = 'pwd' required minlength="8"> <br> <br>
             <label for="phone">Phone: </label>
             <input type="text" name="contact" required minlength="10" maxlength="10" pattern="[6-9]{1}[0-9]{9}"> <br> <br>
@@ -65,9 +31,8 @@ height:100%;
                 <option value="Adilabad">Adilabad</option> 
                 <option value="Khammam">Khammam</option>       
             </select> 
-            <p id="loactionerr"></p><br> 
-            <center><button type="submit" name="send">Submit</button></center>
+            <p id="loactionerr"></p><br> <br>
+            <button type="submit" name="send">Submit</button>
         </form>
-</div>
 </body>
 </html>
