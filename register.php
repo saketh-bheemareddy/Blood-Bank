@@ -65,8 +65,8 @@ height:100%;
                 <option value="Adilabad">Adilabad</option> 
                 <option value="Khammam">Khammam</option>       
             </select> 
-            <p id="loactionerr"></p><br> <br>
-            <button type="submit" name="send">Submit</button>
+            <p id="loactionerr"></p><br> 
+            <center><button type="submit" name="send">Submit</button></center>
         </form>
 </div>
 </body>
