@@ -17,51 +17,9 @@ if (isset($_GET['password_update']) AND $_GET['password_update'] == 'true')
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <title>Blood Bank</title>
 </head>
-<style>
-.login{
-  width: 400px;
-  height: auto;
-  margin: auto;
-  padding: 20px 30px;
-  background: rgba(0,0,0,0.4);
-  border-radius: 10px;
-  color: white;
-  float:right;
-  max-width: 300px;
-  margin-top:10px;
-  margin-right:0px;
-  margin-bottom:300px;
-  display: flex;
-}
-label{
-  width:100px;
-  display: inline-block; 
-}
-
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #dddddd;
-}
-body {
-
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  padding: 8px;
-}
- </style>
 <body background="blood.jpg">
 <!-- <ul>
   <li><a href="#home">Home</a></li>
@@ -69,6 +27,7 @@ li a {
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About Us</a></li>
 </ul> -->
+<div class="body">
 <div class="login">
 <form action="loginvalidate.php" method="post">
     <center>
@@ -83,6 +42,7 @@ li a {
             <a href="forgotpassword.php">Forgot Password</a>
     </center>
         </form>
+</div>
 </div> 
 </body>
 </html>
