@@ -8,17 +8,29 @@
   <title>Document</title>
   <link rel="stylesheet" href="location_page.css">
 </head>
-<body>
-<header>
+<style>
+  body {
+/* background-position: center; */
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+table{
+background-color: rgba(0, 0, 0, 0.2);
+}
+  </style>
+<body background="loc.jpg">
+
   <div class="nav-menu">
-    <a href="welcome.php">Home</a> &nbsp; &nbsp; &nbsp; <a href="logout.php">Log out</a> <br> <br>
+    <br>
+    <a href="welcome.php">Home</a> &nbsp; &nbsp; &nbsp; <a href="logout.php">Log out</a> 
   </div>
   <br>
   <h1>Welcome <?php echo $_SESSION['uname'] ?></h1>
-</header>
+
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <h3>Select Location to view</h3>
-            <select name="location">
+            <select name="location" style="width: 150px;">
               <option value="select">Select</option>
                 <option  value="Hyderabad">Hyderabad</option>
                 <option value="Warangal">Warangal</option>
@@ -43,6 +55,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 ?>
 <br><br>
 <!-- creating a table to display output -->
+<div class="tab">
 <table style = "width:75%; margin-left:auto; margin-right:auto" >
   <tr>
     <th>Aadhar</th>
@@ -67,3 +80,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 $conn->close();
 ?>
 </table>
+</div>
