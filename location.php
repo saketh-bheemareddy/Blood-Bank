@@ -12,13 +12,23 @@
 </head>
 <style>
   body {
+<<<<<<< HEAD
     background-image: url("loc.jpg");
+=======
+    background-image: url("b1.jpeg");
+>>>>>>> 1113752ed87944ebc4f9d6b88eaeaaa85cc84dcc
 background-position: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 
 }
+<<<<<<< HEAD
 
+=======
+table{
+background-color: rgba(0, 0, 0, 0.2);
+}
+>>>>>>> 1113752ed87944ebc4f9d6b88eaeaaa85cc84dcc
   </style>
 <body>
   <div class="nav-menu">
