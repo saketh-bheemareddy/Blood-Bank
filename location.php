@@ -12,7 +12,7 @@
 </head>
 <style>
   body {
-    background-image: url("b1.jpeg");
+    background-image: url("loc.jpg");
 background-position: fixed;
 background-repeat: no-repeat;
 background-size: cover;

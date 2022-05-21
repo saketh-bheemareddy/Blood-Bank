@@ -11,19 +11,22 @@
 </head>
 <style>
   body{
+    background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
   }
   </style>
-<body background="loc.jpg">
+<body background="b1.jpeg">
   <div class="container">
   <div class="font-weight-bold">
   <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
   </div>
-          <!-- using session to get the user name -->
-<h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
+  <br> <br>
+  <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
+
   </div>
-  <h5>Select blood group</h5>
+<div class="form">
+<h5>Select blood group</h5>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <div class="input-group  w-25 justify-content-center">
             <select name="group" class="form-control"  required>
@@ -40,6 +43,7 @@
             <button type="submit" class="btn btn-primary">View</button>
             </div>
 </form>
+</div>
 </body>
 </html>              
 <?php include 'connection.php'; ?> 
