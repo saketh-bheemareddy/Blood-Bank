@@ -17,14 +17,16 @@
                 color: white;
                 float:right;
                 max-width: 300px;
-            margin-top:150px;
-            margin-right:150px;
+            margin-top:50px;
+            margin-right:10px;
             margin-bottom:300px;
             display: flex;
             }
             body{
               background-repeat: no-repeat;
               background-size: cover;
+              background-position:center;
+              /* height: 100%; */
             }
             label { 
           width:100px;
@@ -51,15 +53,39 @@ li a {
   display: block;
   padding: 8px;
 }
+.button {
+    display: block;
+    width: 99px;
+    height: 20px;
+    background: #00B FFF;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+.pass {
+    display: block;
+    width: 150px;
+    height: 20px;
+    background:  #fd5c63;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
  </style>
-<body background="blood.jpg">
+<body background="mod.jpg">
 <!-- <ul>
   <li><a href="#home">Home</a></li>
-<<<<<<< HEAD
+
   <li><a href="#news">News</a></li>
 =======
   < <li><a href="#news">News</a></li> 
->>>>>>> 14ee62be2b76e89b955e43e308fa2c6d852dcf3c
+
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About Us</a></li>
 </ul> -->
@@ -72,9 +98,8 @@ li a {
             <input type = "password" name = 'pwd' id="pwd"> <br> <br>
             <input type="checkbox" name="">Remember me <br> <br>
             <input type="submit" value="Login" name="login" ">
-            <p>Not a user ? <a href="register.php">Register</a></p>
-            
-            <a href="forgotpassword.php">Forgot Password</a>
+            <p>Not a user ? <a href="register.php" class="button">Register</a></p>
+            <a href="forgotpassword.php" class="pass">Forgot Password</a>
     </center>
         </form>
 </div> 
