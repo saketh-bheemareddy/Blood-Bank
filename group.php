@@ -11,11 +11,12 @@
 </head>
 <style>
   body{
+    background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
   }
   </style>
-<body background="loc.jpg">
+<body background="b1.jpeg">
   <div class="container">
   <div class="font-weight-bold">
   <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>

@@ -10,7 +10,8 @@
 </head>
 <style>
   body {
-/* background-position: center; */
+    background-image: url("b1.jpeg");
+background-position: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -19,8 +20,7 @@ table{
 background-color: rgba(0, 0, 0, 0.2);
 }
   </style>
-<body background="loc.jpg">
-
+<body>
   <div class="nav-menu">
     <br>
     <a href="welcome.php">Home</a> &nbsp; &nbsp; &nbsp; <a href="logout.php">Log out</a> 
