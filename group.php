@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<!-- <?php session_start(); ?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +17,14 @@
   }
   </style>
 <body background="loc.jpg">
-  <div class="container">
+  <!-- <div class="container">
   <div class="font-weight-bold">
   <a href="location.php">View By Location</a> &nbsp;
   <a href="logout.php">Log out</a> 
   </div>
   <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
 
-  </div>
+  </div> -->
 <div class="form">
 <h5>Select blood group</h5>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">

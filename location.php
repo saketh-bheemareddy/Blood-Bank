@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<!-- <?php session_start(); ?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +20,14 @@ background-size: cover;
 }
   </style>
 <body>
-<div class="container">
+<!-- <div class="container">
   <div class="font-weight-bold">
   <a href="group.php">View By group</a> &nbsp;
   <a href="logout.php">Log out</a> 
   </div>
   <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
 
-  </div>
+  </div> -->
 <div class="form">
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <h5>Select Location to view</h5>
