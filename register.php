@@ -18,7 +18,7 @@ if( isset( $_GET['not_a_user'] ) AND $_GET['not_a_user'] == 'true' ) {
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height:100%;
+background-attachment: fixed;
 }
 .register {
             width: auto;
@@ -57,7 +57,7 @@ height:100%;
 
   </style>
 
-<body background="r5.jpg">
+<body background="r5.jpg" scroll="no" style="overflow: hidden">
   <div class="register">
 <form action="insert.php" method="post">
   <center><h2 style="color:black">Registration Form</h2></center>

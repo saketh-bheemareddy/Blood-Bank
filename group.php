@@ -16,12 +16,12 @@
     background-size: cover;
   }
   </style>
-<body background="b1.jpeg">
+<body background="loc.jpg">
   <div class="container">
   <div class="font-weight-bold">
-  <a href="welcome.php">Home</a> &nbsp; <a href="logout.php">Log out</a> <br> <br>
+  <a href="location.php">View By Location</a> &nbsp;
+  <a href="logout.php">Log out</a> 
   </div>
-  <br> <br>
   <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
 
   </div>

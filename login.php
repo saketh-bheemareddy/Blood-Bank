@@ -32,11 +32,11 @@ if (isset($_GET['password_update']) AND $_GET['password_update'] == 'true')
 <form action="loginvalidate.php" method="post">
     <center>
             <label for="uid">UID(Aadhar): </label>
-            <input type="text" name="uid" id="uid"> <br> <br>
+            <input type="text" name="uid" id="uid" required> <br> <br>
             <label>Password: </label>
-            <input type = "password" name = 'pwd' id="pwd"> <br> <br>
+            <input type = "password" name = 'pwd' id="pwd" required> <br> <br>
             <input type="checkbox" name="">Remember me <br> <br>
-            <input type="submit" value="Login" name="login" ">
+            <input type="submit" value="Login" name="login" >
             <p>Not a user ? <a href="register.php">Register</a></p>
             
             <a href="forgotpassword.php">Forgot Password</a>

@@ -20,12 +20,13 @@ background-size: cover;
 }
   </style>
 <body>
-  <div class="nav-menu">
-    <br>
-    <a href="welcome.php">Home</a> &nbsp; &nbsp; &nbsp; <a href="logout.php">Log out</a> 
+<div class="container">
+  <div class="font-weight-bold">
+  <a href="group.php">View By group</a> &nbsp;
+  <a href="logout.php">Log out</a> 
   </div>
-  <br> <br>
   <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
+
   </div>
 <div class="form">
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
