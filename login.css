@@ -1,0 +1,70 @@
+.login {
+width: 300px;
+height: auto;
+margin: auto;
+padding: 20px 30px;
+background: rgba(0,0,0,0.4);
+border-radius: 10px;
+color: white;
+float:right;
+margin-top:10px;
+margin-right:0px;
+margin-bottom:300px;
+display: flex;
+}
+body{
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+/* height: 100%; */
+}
+label { 
+width:100px;
+display: inline-block; }
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #dddddd;
+}
+body {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+padding: 8px;
+}
+.button {
+display: block;
+width: 99px;
+height: 20px;
+background: #00B FFF;
+padding: 5px;
+text-align: center;
+border-radius: 2px;
+color: white;
+font-weight: bold;
+line-height: 25px;
+}
+.pass {
+display: block;
+width: 150px;
+height: 20px;
+background:  #fd5c63;
+padding: 5px;
+text-align: center;
+border-radius: 2px;
+color: white;
+font-weight: bold;
+line-height: 25px;
+text-decoration: none;
+}
