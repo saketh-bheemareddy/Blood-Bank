@@ -6,25 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BY blood Group</title>
-  <link rel="stylesheet" href="group_page.css">
+  <link rel="stylesheet" href="/styles/group_page.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<style>
-  body{
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  </style>
-<body background="loc.jpg">
-  <!-- <div class="container">
-  <div class="font-weight-bold">
-  <a href="location.php">View By Location</a> &nbsp;
-  <a href="logout.php">Log out</a> 
-  </div>
-  <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
-
-  </div> -->
+<body>
 <div class="form">
 <h5>Select blood group</h5>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
