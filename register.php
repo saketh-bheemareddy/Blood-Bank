@@ -11,7 +11,7 @@ if( isset( $_GET['not_a_user'] ) AND $_GET['not_a_user'] == 'true' ) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="styles/register.css">
 </head>
 <style>
  body {
@@ -57,7 +57,7 @@ background-attachment: fixed;
 
   </style>
 
-<body background="/images/register_page_bg.jpg" scroll="no" style="overflow: hidden">
+<body background="images/register_page_bg.jpg" scroll="no" style="overflow: hidden">
   <div class="register">
 <form action="insert.php" method="post">
             <label for="uid">Uid(Aadhar): </label>
