@@ -11,7 +11,7 @@ if( isset( $_GET['not_a_user'] ) AND $_GET['not_a_user'] == 'true' ) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="/styles/register.css">
+    <link rel="stylesheet" href="../styles/register.css">
 </head>
 <style>
  body {
@@ -82,15 +82,9 @@ background-attachment: fixed;
                 <option value="Adilabad">Adilabad</option> 
                 <option value="Khammam">Khammam</option>       
             </select> 
-<<<<<<< HEAD
-            <p id="loactionerr"></p><br> <br>
-            <button type="submit" name="send">Submit</button>
-        </form>
-=======
             <p id="loactionerr"></p><br> 
             <center><button class="button" type="submit" name="send">Submit</button><center>
             </form>
 </div>
->>>>>>> mani
 </body>
 </html>
