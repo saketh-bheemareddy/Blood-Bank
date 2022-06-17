@@ -25,7 +25,7 @@ if (isset($_GET['password_update']) AND $_GET['password_update'] == 'true')
 <div class="login">
   <center>
 <form action="loginvalidate.php" method="post">
-            <label for="uid">Enter UID(Aadhar): </label>
+            <label for="uid">UID(Aadhar): </label>
             <input type="text" name="uid" id="uid"> <br> <br>
             <label>Password: </label>
             <input type = "password" name = 'pwd' id="pwd"> <br> <br>
