@@ -1,4 +1,7 @@
 <?php session_start();?>
+<?php if(isset($_GET['profile_updated']) and $_GET('profile_updated') == "true"){
+echo "<script>alert('User Profile Updated Sucessfully');</script>";
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,8 @@
 <body background="images/output_bg.jpg">
 <div class="container">
   <div class="font-weight-bold">
-  <a href="logout.php">Log out</a> 
+  <a href="logout.php">Log out</a> &nbsp;
+  <a href="update_page.php">update profile</a> 
   </div>
   <h1 class="text-center">Welcome <?php echo $_SESSION['uname'] ?></h1>
   </div>
