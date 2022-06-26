@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     //catching the sql exceptions
     catch(Exception $e)
     {
-        //sql duplicate for primary key wxception handling
+        //sql duplicate for primary key exception handling
         if($e->getCode() == 1062)
         {
             header("Location:login.php?existing_user=true");

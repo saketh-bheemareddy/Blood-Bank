@@ -3,7 +3,7 @@
 $uid=$_POST['uid'];
 $pwd=$_POST['pwd'];
 
-//sql query to find user in database usinf uid.
+//sql query to find user in database using uid.
 $sql = "SELECT * FROM donar_details where uid ='$uid';";
 
 $result = $conn->query($sql);

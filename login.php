@@ -30,7 +30,7 @@ if (isset($_GET['password_update']) AND $_GET['password_update'] == 'true')
             <label>Password: </label>
             <input type = "password" name = 'pwd' id="pwd"> <br> <br>
             <input type="checkbox" name="">Remember me <br> <br>
-            <input type="submit" value="Login" name="login" ">
+            <input type="submit" value="Login" name="login" >
             <p>Not a user ? <a href="register.php" class="button">Register</a></p>
             <a href="forgotpassword.php" class="pass">Forgot Password</a>
     </center>
