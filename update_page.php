@@ -16,7 +16,7 @@ $row = $result->fetch_assoc();
     <title>Update Profile</title>
     <link rel="stylesheet" href="styles/update_page.css">
 </head>
-<body>
+<body background="images/update_bg.png" style="background-repeat: no-repeat; background-size: 100%;">
     <center>
     <div class="profile">
         <h5><b>Edit Your Profile</b></h5>
